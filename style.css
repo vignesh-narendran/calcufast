@@ -1,0 +1,45 @@
+:root {
+	--BG-PRIMARY: #141414;
+	--ACCENT: #fc1a40;
+	--BG-SECONDARY: #202020;
+	--TEXT-COLOR: #eeeeee;
+	--HEALTH-GOOD: #2ffd51;
+	--HEALTH-WARN: #ffec3e;
+	--HEALTH-POOR: var(--ACCENT);
+}
+
+body {
+	background: var(--BG-PRIMARY);
+	color: var(--TEXT-COLOR);
+	text-align: center;
+}
+
+.center-stuff-c {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.timer-c {
+	width: 100%;
+	height: 5px;
+	background: var(--ACCENT);
+}
+
+#lives-i {
+	font-size: 50px;
+}
+
+.lives-good-c {
+	color: var(--HEALTH-GOOD);
+}
+
+.lives-warn-c {
+	color: var(--HEALTH-WARN);
+}
+
+.lives-poor-c {
+	color: var(--HEALTH-POOR);
+}
