@@ -4,21 +4,83 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Calcufast</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="style.css" type="text/css" />
 	</head>
 	<body>
+		<div class="header-c">
+			<h1>Calcu<span class="strike-c">late</span>fast</h1>
+			<p>Your personal speed math trainer</p>
+			<progress value="100" max="100"></progress>
+			<div id="lives-i" class="lives-good-c"></div>
+		</div>
 		<div class="container-c center-stuff-c">
-			<div class="header-c">
-				<h1>Calcufast</h1>
-				<p>Your personal speed math trainer</p>
-			</div>
 			<div class="content-c">
-				<div class="timer-c"></div>
-				<div id="lives-i" class="lives-good-c"></div>
-				<div class="instruction-c"></div>
-				<div class="game-c"></div>
-				<div class="scorecard-c"></div>
+				<div class="instruction-c">
+					<h3>3 lives to spare.</h3>
+					<h3>8 seconds to solve a problem.</h3>
+					<h3>
+						Crack your knuckles and start crunching numbers.
+					</h3>
+					<input
+						type="button"
+						value="Let's Start"
+						class="btn-c"
+						id="start-btn-i"
+					/>
+				</div>
+				<div class="game-c">
+					<div class="question-c"></div>
+					<input type="text" class="answer-box-c" disabled />
+
+					<div class="keypad-c">
+						<input type="button" value="9" class="keys-c ip-c" />
+						<input type="button" value="8" class="keys-c ip-c" />
+						<input type="button" value="7" class="keys-c ip-c" />
+						<input type="button" value="6" class="keys-c ip-c" />
+						<input type="button" value="5" class="keys-c ip-c" />
+						<input type="button" value="4" class="keys-c ip-c" />
+						<input type="button" value="3" class="keys-c ip-c" />
+						<input type="button" value="2" class="keys-c ip-c" />
+						<input type="button" value="1" class="keys-c ip-c" />
+						<input
+							type="button"
+							value="&#9665;"
+							class="keys-c no-ip-c"
+							id="bs-i"
+						/>
+						<input type="button" value="0" class="keys-c ip-c" />
+						<input
+							type="button"
+							value="&#10004;"
+							class="keys-c no-ip-c"
+							id="enter-i"
+						/>
+					</div>
+				</div>
+				<div class="scorecard-c center-stuff-c">
+					<div>
+						<h1>Your Score is <span class="scorecard-span-c"></span></h1>
+					</div>
+					<div>
+						<input
+							type="button"
+							value="Play Again"
+							class="btn-c"
+							id="play-again-i"
+						/>
+					</div>
+				</div>
 			</div>
+		</div>
+		<div class="ad-c">
+			<h4>
+				Get fresh wallpapers for free
+				<a href="https://colormydevice.in" class="btn-inv-c">Download now</a>
+			</h4>
 		</div>
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.min.js"

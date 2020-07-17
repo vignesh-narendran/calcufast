@@ -1,17 +1,48 @@
 :root {
-	--BG-PRIMARY: #141414;
+	--BG-PRIMARY: #030303;
 	--ACCENT: #fc1a40;
-	--BG-SECONDARY: #202020;
+	--BG-SECONDARY: #222222;
 	--TEXT-COLOR: #eeeeee;
 	--HEALTH-GOOD: #2ffd51;
 	--HEALTH-WARN: #ffec3e;
 	--HEALTH-POOR: var(--ACCENT);
+	font-family: 'Montserrat', sans-serif;
 }
 
 body {
 	background: var(--BG-PRIMARY);
 	color: var(--TEXT-COLOR);
 	text-align: center;
+}
+
+.strike-c {
+	text-decoration: line-through;
+	color: var(--BG-SECONDARY);
+}
+
+.header-c {
+	width: 100%;
+}
+
+.keys-c {
+	height: 60px;
+	width: 60px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	background: var(--ACCENT);
+	color: var(--TEXT-COLOR);
+	border: 0;
+}
+
+.btn-c {
+	font-size: 20px;
+	font-weight: bold;
+	background: var(--ACCENT);
+	border: 0;
+	padding: 10px;
+	color: var(--TEXT-COLOR);
 }
 
 .center-stuff-c {
@@ -22,14 +53,24 @@ body {
 	width: 100%;
 }
 
-.timer-c {
+progress {
+	border: none;
 	width: 100%;
-	height: 5px;
+	height: 10px;
+	background: var(--BG-SECONDARY);
+}
+
+progress {
+	color: var(--ACCENT);
+}
+
+progress::-webkit-progress-value {
 	background: var(--ACCENT);
 }
 
 #lives-i {
-	font-size: 50px;
+	font-size: 40px;
+	margin-top: 20px;
 }
 
 .lives-good-c {
@@ -42,4 +83,60 @@ body {
 
 .lives-poor-c {
 	color: var(--HEALTH-POOR);
+}
+
+.question-c {
+	font-size: 50px;
+	display: inline;
+}
+
+.answer-box-c {
+	height: 50px;
+	width: 100px;
+	background: var(--BG-SECONDARY);
+	border: 0;
+	font-size: 50px;
+	text-align: center;
+	color: var(--TEXT-COLOR);
+}
+
+.keypad-c {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.scorecard-c {
+	width: 70%;
+	height: 50%;
+	background: var(--BG-SECONDARY);
+	z-index: 9999;
+	display: grid;
+	grid-template-columns: auto;
+	padding: 10px;
+}
+
+.game-c {
+	margin-top: 200px;
+}
+
+.ad-c {
+	position: fixed;
+	left:0;
+	bottom:0;
+	background: var(--ACCENT);
+	padding: 5px;
+	width: 100%;
+	color: var(--TEXT-COLOR);
+}
+
+.btn-inv-c {
+	text-decoration: none;
+	background: var(--TEXT-COLOR);
+	color: var(--BG-PRIMARY);
+	padding: 10px;
+	font-weight: bold;
 }
