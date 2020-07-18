@@ -128,7 +128,6 @@ progress::-webkit-progress-value {
 	left:0;
 	bottom:0;
 	background: var(--ACCENT);
-	padding: 2px;
 	width: 100%;
 	color: var(--TEXT-COLOR);
 }
@@ -137,6 +136,6 @@ progress::-webkit-progress-value {
 	text-decoration: none;
 	background: var(--TEXT-COLOR);
 	color: var(--BG-PRIMARY);
-	padding: 5px;
+	padding: 3px;
 	font-weight: bold;
 }
